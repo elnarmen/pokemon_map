@@ -73,8 +73,10 @@ def show_pokemon(request, pokemon_id):
 
     pokemon_description = {
         'pokemon_id': pokemon.pk,
-        'img_url': request.build_absolute_uri(pokemon.image.url),
         'title_ru': pokemon.title,
+        'description': pokemon.description,
+        'img_url': request.build_absolute_uri(pokemon.image.url),
+
     }
 
     return render(request, 'pokemon.html', context={
