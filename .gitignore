@@ -163,5 +163,6 @@ cython_debug/
 #.idea/
 **/__pycache__
 images/
+media/
 .vscode
 .DS_Store
